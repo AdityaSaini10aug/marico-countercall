@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Countercall · Retailer call desk</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><div class="bar"><span class="wordmark"><b class="mark" aria-hidden="true">◖))</b> Countercall</span><span class="header-note">Marico × IIT Madras</span></div></header>
+<main><div class="heading"><div><p class="overline">GENERAL TRADE</p><h1>Retailer call desk</h1></div><span id="mode">Loading…</span></div>
+<section class="setup" aria-label="Call setup"><label>Outlet<select id="retailer"></select></label><label>Simulated local time<input id="clock" type="time" value="15:00"></label><button id="start" class="primary">Start simulated call</button></section>
+<p id="notice" role="status"></p>
+<div class="workspace"><section class="conversation"><div class="pane-head"><div><p class="overline">CONVERSATION</p><h2 id="outlet">Choose an outlet</h2><p id="place"></p></div><b id="status">Ready</b></div>
+<div id="transcript" role="log" aria-live="polite"></div>
+<div class="responses"><div id="choices"></div><form id="form"><label class="sr-only" for="utterance">Retailer response</label><input id="utterance" placeholder="Type the retailer’s response…" maxlength="1200" autocomplete="off"><button id="send">Send</button></form>
+<div class="voice"><button id="mic" type="button">Use microphone</button><label><input type="checkbox" id="sound" checked> Read aloud</label><label><input type="checkbox" id="auto"> Hands-free</label><label class="lang-label"><span class="sr-only">Conversation language</span><select id="lang"></select></label></div><p id="voice-state" aria-live="polite"></p></div></section>
+<aside><div class="tabs"><button id="draft-tab" class="selected">Order draft</button><button id="catalog-tab">Catalogue</button></div><div id="side"></div></aside></div>
+</main><footer>Candidate prototype · Synthetic case data · Simulated outbound calls</footer><script src="/app.js"></script></body></html>
